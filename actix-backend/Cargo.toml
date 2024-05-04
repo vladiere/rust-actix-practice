@@ -1,0 +1,22 @@
+[package]
+name = "actix-backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.4.1"
+actix-web-httpauth = "0.8.1"
+chrono = { version = "0.4.31", features = ["serde"] }
+argonautica = "0.2.0"
+dotenv = "0.15.0"
+env_logger = "0.11.1"
+hmac = "0.12.1"
+jwt = "0.16.0"
+log = "0.4.20"
+serde = { version = "1.0.193", features = ["derive"] }
+serde_json = "1.0.108"
+sha2 = "0.10.8"
+sqlx = { version = "0.7.3", features = ["runtime-async-std", "tls-native-tls", "postgres", "chrono"] }
+actix-cors = "0.7.0"
